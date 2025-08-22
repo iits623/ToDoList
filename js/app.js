@@ -6,6 +6,7 @@ let clearButton = document.querySelector('#clearButton')
 
 let ArrayTodo = []
 function addTodo() {
+    inputTodo.value = ''
     let valueInput = inputTodo.value.trim()
     if (valueInput === '') {
         alert('pleas enter todo!!!')
