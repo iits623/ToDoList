@@ -6,7 +6,6 @@ let clearButton = document.querySelector('#clearButton')
 
 let ArrayTodo = []
 function addTodo() {
-    inputTodo.value = ''
     let valueInput = inputTodo.value.trim()
     if (valueInput === '') {
         alert('pleas enter todo!!!')
@@ -30,6 +29,7 @@ function savaLocalStorage(itemTodo) {
 }
 
 function todoGenerator(itemTodo) {
+    inputTodo.value = ''
     listTodo.innerHTML = ''
     itemTodo.forEach(function (todo) {
         let creatElemLi = document.createElement('li')
